@@ -6,9 +6,13 @@ import Title from './components/Title'
 
 function App() {
 
+const titles = ["Kategorier", "Om oss", "Produkter"] 
+
   return (
     <main>
-      <Title />
+
+      {titles.map((item, i) => <Title key={i} title={item} />)}
+  
       <h2>Dette er kjempe gøy</h2>
     </main>
   )

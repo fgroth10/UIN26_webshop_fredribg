@@ -1,3 +1,3 @@
-export default function Title(){
-    return <h1>Mitt første React prosjekt</h1>
+export default function Title({title}){
+    return <h1>{title}</h1>
 }
